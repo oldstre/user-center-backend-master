@@ -3,7 +3,7 @@ package com.wry.usercenter.contant;
 /**
  * 用户常量
  *
- * @author yupi
+ * @author 
  */
 public interface UserConstant {
 
