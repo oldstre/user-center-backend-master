@@ -1,9 +1,6 @@
 package com.wry.usercenter.model.domain;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -18,7 +15,7 @@ public class Component implements Serializable {
     /**
      * 
      */
-    @TableId(type = IdType.AUTO)
+    @TableId(value = "id",type = IdType.AUTO)
     private Integer id;
 
     /**
@@ -39,6 +36,7 @@ public class Component implements Serializable {
     /**
      * 是否被删除
      */
+    @TableLogic
     private Integer isDelete;
 
     @TableField(exist = false)

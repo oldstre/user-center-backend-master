@@ -7,14 +7,13 @@
     <resultMap id="BaseResultMap" type="com.wry.usercenter.model.domain.Product">
             <id property="id" column="id" jdbcType="INTEGER"/>
             <result property="productName" column="productName" jdbcType="VARCHAR"/>
-            <result property="productImg" column="productImg" jdbcType="VARCHAR"/>
             <result property="productQuantity" column="productQuantity" jdbcType="INTEGER"/>
             <result property="productType" column="productType" jdbcType="VARCHAR"/>
             <result property="isDelete" column="isDelete" jdbcType="TINYINT"/>
     </resultMap>
 
     <sql id="Base_Column_List">
-        id,productName,productImg,
+        id,productName,
         productQuantity,productType,isDelete
     </sql>
 </mapper>

@@ -58,17 +58,17 @@ public class ComponentController {
 
 //    /**
 //     * 条件查询，按零件类型--多值
-//     * @param productType
+//     * @param componentType
 //     * @return
 //     */
 //    @GetMapping("/batch")
 //    public BaseResponse<List<Component>> searchByType(@RequestParam("componentType") String componentType){
 //        LambdaQueryWrapper<Product> lambdaQueryWrapper =new LambdaQueryWrapper<>();
 //        if(StringUtils.isNotBlank(componentType)){
-//            lambdaQueryWrapper.eq(Component::,componentType);
+//            lambdaQueryWrapper.eq(Component::g,componentType);
 //        }
-//        List<Product> productList = productService.list(lambdaQueryWrapper);
-//        return ResultUtils.success(productList);
+//        List<Component> componentList = componentService.list(lambdaQueryWrapper);
+//        return ResultUtils.success(componentList);
 //    }
 
     @PostMapping("/delete")

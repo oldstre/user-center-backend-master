@@ -31,8 +31,6 @@ public class ProductController {
             queryWrapper.like("productName", productName);
         }
         List<Product> productList = productService.list(queryWrapper);
-        //System.out.println(productList);
-//        List<Product> list = productList.stream().map(user -> productLis).collect(Collectors.toList());
         return ResultUtils.success(productList);
     }
 

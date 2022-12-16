@@ -85,9 +85,9 @@ public class UserController {
 
     @GetMapping("/search")
     public BaseResponse<List<User>> searchUsers(String username, HttpServletRequest request) {
-        if (!isAdmin(request)) {//判断是否为管理员
-           throw new BusinessException(ErrorCode.PARAMS_ERROR);
-        }
+//        if (!isAdmin(request)) {//判断是否为管理员
+//           throw new BusinessException(ErrorCode.PARAMS_ERROR);
+//        }
         QueryWrapper<User> queryWrapper = new QueryWrapper<>();
         if (StringUtils.isNotBlank(username)) {
             queryWrapper.like("username", username);

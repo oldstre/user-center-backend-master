@@ -28,10 +28,7 @@ public class Product implements Serializable {
      */
     private String productName;
 
-    /**
-     * 产品图片
-     */
-    private String productImg;
+
 
     /**
      * 产品数量
@@ -57,12 +54,12 @@ public class Product implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Product product = (Product) o;
-        return Objects.equals(id, product.id) && Objects.equals(productName, product.productName) && Objects.equals(productImg, product.productImg) && Objects.equals(productQuantity, product.productQuantity) && Objects.equals(productType, product.productType) && Objects.equals(isDelete, product.isDelete);
+        return Objects.equals(id, product.id) && Objects.equals(productName, product.productName)  && Objects.equals(productQuantity, product.productQuantity) && Objects.equals(productType, product.productType) && Objects.equals(isDelete, product.isDelete);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, productName, productImg, productQuantity, productType, isDelete);
+        return Objects.hash(id, productName, productQuantity, productType, isDelete);
     }
 
     @Override
@@ -70,7 +67,6 @@ public class Product implements Serializable {
         return "Product{" +
                 "id=" + id +
                 ", productName='" + productName + '\'' +
-                ", productImg='" + productImg + '\'' +
                 ", productQuantity=" + productQuantity +
                 ", productType='" + productType + '\'' +
                 ", isDelete=" + isDelete +
