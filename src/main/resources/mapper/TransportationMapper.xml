@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wry.usercenter.mapper.TransportationMapper">
+
+    <resultMap id="BaseResultMap" type="com.wry.usercenter.model.domain.Transportation">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="goodsId" column="goodsId" jdbcType="INTEGER"/>
+            <result property="goodsName" column="goodsName" jdbcType="VARCHAR"/>
+            <result property="goodsQuantity" column="goodsQuantity" jdbcType="INTEGER"/>
+            <result property="inDate" column="inDate" jdbcType="TIMESTAMP"/>
+            <result property="outDate" column="outDate" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,goodsId,goodsName,goodsQuantity
+        inDate,outDate
+    </sql>
+</mapper>

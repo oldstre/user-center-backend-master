@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wry.usercenter.mapper.ManufactureMapper">
+
+    <resultMap id="BaseResultMap" type="com.wry.usercenter.model.domain.Manufacture">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="objectName" column="objectName" jdbcType="VARCHAR"/>
+            <result property="mar1" column="mar1" jdbcType="VARCHAR"/>
+            <result property="mar1Q" column="mar1Q" jdbcType="INTEGER"/>
+            <result property="mar2" column="mar2" jdbcType="VARCHAR"/>
+            <result property="mar2Q" column="mar2Q" jdbcType="INTEGER"/>
+            <result property="mar3" column="mar3" jdbcType="VARCHAR"/>
+            <result property="mar3Q" column="mar3Q" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,objectName,mar1,
+        mar1Q,mar2,mar2Q,
+        mar3,mar3Q
+    </sql>
+</mapper>

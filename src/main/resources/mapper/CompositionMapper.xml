@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wry.usercenter.mapper.CompositionMapper">
+
+    <resultMap id="BaseResultMap" type="com.wry.usercenter.model.domain.Composition">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="objectName" column="objectName" jdbcType="VARCHAR"/>
+            <result property="component1" column="component1" jdbcType="VARCHAR"/>
+            <result property="com1Quantity" column="com1Quantity" jdbcType="INTEGER"/>
+            <result property="component2" column="component2" jdbcType="VARCHAR"/>
+            <result property="com2Quantity" column="com2Quantity" jdbcType="INTEGER"/>
+            <result property="component3" column="component3" jdbcType="VARCHAR"/>
+            <result property="com3Quantity" column="com3Quantity" jdbcType="INTEGER"/>
+            <result property="component4" column="component4" jdbcType="VARCHAR"/>
+            <result property="com4Quantity" column="com4Quantity" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,objectName,component1,com1Quantity
+        component2,com2Quantity,component3,com3Quantity,component4,com4Quantity
+    </sql>
+</mapper>
